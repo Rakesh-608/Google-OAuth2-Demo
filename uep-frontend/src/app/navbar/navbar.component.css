@@ -1,0 +1,65 @@
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* Logo Styling */
+.logo img {
+  height: 40px;
+}
+
+/* Navigation Items */
+.nav-items {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items li {
+  display: inline;
+}
+
+.nav-items a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background 0.3s;
+}
+
+.nav-items a:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
+/* Logout Button */
+.logout {
+  cursor: pointer;
+}
+
+
+/* button.component.css */
+.custom-button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: rgb(7, 7, 7);
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #45a049;
+}
+
+.custom-button:active {
+  background-color: #3e8e41;
+}

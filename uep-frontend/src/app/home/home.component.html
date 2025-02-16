@@ -1,0 +1,17 @@
+<div class="profile-container">
+    <div class="profile-card" >
+    <!-- *ngIf="user; else loginSection"> -->
+      <img [src]="user.picture" alt="Profile Picture" class="profile-pic" />
+      <h2>{{ user.name }}</h2>
+      <p>{{ user.email }}</p>
+      <button (click)="continueRegistration()">Continue Registration</button>
+    </div>
+  
+    <ng-template #loginSection>
+      <p>You are not logged in. Please sign in with Google.</p>
+      <a href="http://localhost:8080/oauth2/authorization/google">
+        <button>Login with Google</button>
+      </a>
+    </ng-template>
+  </div>
+  
